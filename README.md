@@ -15,6 +15,27 @@
 3. Paint on the canvas using the different colors.
 4. Download the script, as seen above. You may have to run the command `chmod 701 github_painter.sh` to give executable permission to the file. Then, run `sudo ./github_painter.sh` to run the script.
 
+In Windows, `.sh` scripts are not natively executable like they are on Unix-based systems. To run a `.sh` script in Windows, you typically need to use WSL or a compatible shell environment. Here’s how to address the issue:
+
+### Method 2: Using Git Bash
+
+If you don’t want to use WSL, you can also run `.sh` scripts using Git Bash:
+
+1. **Install Git for Windows**: Download and install from [git-scm.com](https://git-scm.com/).
+
+2. **Open Git Bash**: After installation, open Git Bash from the Start menu.
+
+3. **Navigate to Your Script**: Use `cd` to navigate to your script's directory:
+   ```bash
+   cd /c/path/to/your/github_painter.sh
+   ```
+
+4. **Run the Script**: You might not need to use `sudo` in Git Bash, but you can run the script with:
+   ```bash
+   chmod +x github_painter.sh   # Make it executable (if needed)
+   ./github_painter.sh           # Execute the script
+   ```
+
 ### Troubleshooting
 
 - To delete the art, you can always delete the repository that the commits took place in. This is the easy way out. For more complex cases, refer to [this](https://stackoverflow.com/questions/448919/how-can-i-remove-a-commit-on-github) Stack Overflow question.
