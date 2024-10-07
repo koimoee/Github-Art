@@ -4,6 +4,7 @@ mkdir github_painter
 cd github_painter
 git init
 git remote add origin https://github.com/mattrltrent/some_example_repo.git
+git checkout -b main
 touch foobar.txt
 echo 'Sun Mar 31 2019 00:00:00 GMT-0700 (Pacific Daylight Time) -> (0)' >> foobar.txt
 git add foobar.txt
